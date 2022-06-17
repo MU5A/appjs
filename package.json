@@ -1,0 +1,18 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "UNit testing with jest",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "testing",
+    "test"
+  ],
+  "author": "BAshir Musa",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  }
+}
