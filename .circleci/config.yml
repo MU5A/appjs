@@ -11,6 +11,7 @@ jobs:
 
     # Add steps to the job
     steps:
+      - checkout
       - run: npm install
       - run: npm test
 
