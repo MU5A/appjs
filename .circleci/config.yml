@@ -14,8 +14,3 @@ jobs:
       - run: npm install
       - run: npm test
 
-# Invoke jobs via workflows
-workflows:
-  build-workflow:
-    jobs:
-      - build
