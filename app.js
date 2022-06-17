@@ -8,7 +8,11 @@ function prod(a, b) {
 
 
 module.exports = sum;
+module.exports = prod;
+
+/*
 module.export = {
   sum: sum,
   prod: prod,
 }
+*/
