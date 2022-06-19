@@ -12,7 +12,7 @@ pipeline {
 
                 echo 'Testing..'  
                 sh 'npm install && npm test' 
-                junit '**/*.xml' 
+                junit allowEmptyResults: true, keepLongStdio: true, skipMarkingBuildUnstable: true, testResults: '**/*.xml'
             }
         }
     }
