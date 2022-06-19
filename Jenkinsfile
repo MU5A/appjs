@@ -11,13 +11,8 @@ pipeline {
             steps {
 
                 echo 'Testing..'  
-                sh 'make check || true' 
+                sh 'npm install && npm test' 
                 junit '**/*.xml' 
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
             }
         }
     }
