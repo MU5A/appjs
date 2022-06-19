@@ -9,7 +9,10 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+
+                echo 'Testing..'  
+                sh 'make check || true' 
+                junit '**/*.xml' 
             }
         }
         stage('Deploy') {
